@@ -19,6 +19,7 @@ p,li,a{
 }
 h1,h2,h3,h4,h5,h6{
     font-family: "Poppins", sans-serif;
+    color: var(--typography);
 }
 a{
     text-decoration: none;
@@ -479,7 +480,8 @@ background-image: linear-gradient(
 }
 /***** End myDomain Section *****/
 /***** jhansi Section *****/ 
-.jhansi{
+.jhansi-container{
+    position: relative;
     width: 100%;
     height: 72rem;
     background-image: linear-gradient(
@@ -488,5 +490,31 @@ background-image: linear-gradient(
     url('../resume/Picture/jhansi-fort-jhansi-uttar-pradesh-4-attr-hero.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+.jhansi h2{
+    padding-left: 8rem;
+    padding-top: 2rem;
+    font-size: 4rem;
+}
+.jhansi-circle{
+    position: absolute;
+      top: 55%;         
+      left: 48%;         
+      transform: translate(-50%, -50%); 
+      width: 102rem;        
+      height: 54rem;      
+      background-color: rgba(8, 8, 8, 0.61); 
+      border-radius: 50%;
+      display: flex;      
+      align-items: center; 
+      justify-content: center; 
+      padding: 190px;
+      box-sizing: border-box;
+      p{
+        /* padding: 2rem; */
+        display: inline-block;
+        font-size: 30pxs;
+        color: var(--light-cyan);
+      }
 }
 /***** End jhansi Section *****/
