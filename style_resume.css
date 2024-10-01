@@ -380,6 +380,17 @@ main{
 /***** myDomain Section *****/
 .section-myDomain{
     position: relative;
+   & h2 {
+        font-size: 64px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 2px 2px 5px #000;
+    }
+    & p {
+        font-size: 20px;
+        color: white;
+    }
 }
 .mainheadin-myDomain{
     display: inline-block;
@@ -389,17 +400,16 @@ main{
     background-color: var(--dream-red);
     padding: 1rem 2rem;
     display: grid;
-    place-items: start center;
+    place-items: center center;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
 }
-.bars{
-    /*width: 100%;
-    */display: inline-block;
+/* .bars{
+    display: inline-block;
     background-color: var(--light-cyan);
     opacity: 0.6;
     border-radius: 2rem;
@@ -407,7 +417,9 @@ main{
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
-}
+    display: flex;
+    
+} */
 .section1{
 width: 100%;
 height: 100vh;
@@ -508,7 +520,7 @@ background-image: linear-gradient(
       display: flex;      
       align-items: center; 
       justify-content: center; 
-      padding: 190px;
+      padding: 19rem;
       box-sizing: border-box;
       p{
         /* padding: 2rem; */
@@ -518,3 +530,230 @@ background-image: linear-gradient(
       }
 }
 /***** End jhansi Section *****/
+/***** strength Section *****/ 
+.section-myStrengths{
+    position: relative;
+    background: radial-gradient(circle at 12.8% 28%, rgba(206, 155, 243, 0.486) 0%, rgba(142, 230, 247, 0.486) 90%);
+}
+.section-common-heading{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+.section-common--title{
+    font-size: 2rem;
+}
+.section-myStrengths .grid{
+    gap: 9.6rem;
+}
+
+.myStrengths--div{
+    margin-top: 3.2rem;
+}
+.section-myStrengths .text-align--right .myStrengths--div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    text-align: right;
+}
+.common-text--highlight{
+    width: 6rem;
+    aspect-ratio: 1;
+    background-color: var(--supporting-color);
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.choose-center--div img{
+    width: 100%;
+    height: auto;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+}
+.choose-center--div, figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.choose-center--div figure::before, .choose-center--div figure::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    background-color: var(--main-color);
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: -1;
+}
+.choose-center--div figure::after{
+    animation: square 5s linear infinite alternate;
+    -webkit-animation: square 5s linear infinite alternate;
+}
+@keyframes square {
+    0%{
+        background-color: #b3d0ff;
+    }
+    25%{
+        background-color: #80b1ff;
+    }
+    50%{
+        background-color: #4c91ff;
+    }
+    75%{
+        background-color: #99c0ff;
+    }
+    100%{
+        background-color: #3381ff;
+    }
+}
+.choose-center--div figure::after{
+    width: 55rem;
+    height: 55rem;
+    background-color: transparent;
+    z-index: -2;
+    border: 1rem solid var(--supporting-color);
+} 
+/***** waves Section *****/
+.custom-shape-divider-bottom-1727810850 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1727810850 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 106px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1727810850 .shape-fill {
+    fill: #FFFFFF;
+} 
+ /***** End waves Section *****/
+
+/***** End strength Section *****/
+/***** contact me Section *****/ 
+.section-contact--homepage{
+    margin-top: -10rem;
+    width: 60%;
+    min-height: 35rem;
+    margin: 0 auto;
+    padding-left: 3.2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-bottom: 5rem;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+    /* padding-top: 15rem; */
+    position: relative;
+    bottom: -15rem;
+    z-index: 1;
+    background-color: var(--white-color);
+
+    &.grid
+{
+       align-items: center; 
+       gap: 6.4rem;
+    }
+}
+.container.grid.grid-two--cols{
+    padding: 3rem;
+}
+.contact-title{
+    font-size: 3.8rem;
+    line-height: 1.2;
+}
+.contact-content p{
+    margin: 1.2rem 0 2.4rem 0;
+}
+.section-contact--homepage a{
+    color: var(--white-color);
+    text-transform: capitalize;
+}
+.section-contact--homepage .fa-solid{
+    padding: 0;
+    background-color: var(--);
+    color: var(--white-color);
+}
+.section-contact--homepage img{
+    width: 90%;
+    height: auto;
+}
+ /***** End contact me Section *****/
+
+/***** footer Section *****/ 
+footer {
+    background-color: var(--footer-bg-color);
+    /* padding-top: 15rem;
+    position: relative; */
+    padding: 3rem;
+}
+footer *{
+    color: var(--white-color);
+}
+
+.footer-1--div {
+& .social-footer--icons{
+        display: flex;
+        gap: 2.4rem;
+
+
+    & .fa-brands{
+        width: 5rem;
+        aspect-ratio: 1;
+        background-color: var(--supporting-color);
+        color: var(--bnt-hover-bg-color);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        display: grid;
+        place-items: center;
+        transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        &:hover{
+            color: var(--supporting-color);
+            background-color: var(--bnt-hover-bg-color);
+            rotate: 360deg;
+}
+    }
+}
+}
+/***** End footer Section *****/
