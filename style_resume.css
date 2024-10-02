@@ -900,6 +900,10 @@ footer *{
     }
 }
 @media(width <=998px){
+    .mainheadin-myDomain{
+        margin-left: 0;
+        margin-right: 0;
+    }
     .section-hero{
         margin: 0;
         height: auto;
@@ -956,7 +960,7 @@ footer *{
         }
     }
 }
-@media(width <=768px)
+@media(width <= 768px)
 {
     .grid-two--cols,
     .grid-three--cols{
@@ -984,5 +988,4 @@ footer *{
     }
 }
 
- 
 /***** End responsive Section *****/
