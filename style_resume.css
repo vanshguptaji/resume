@@ -246,7 +246,74 @@ main{
 
     }
 }
-
+.section-hero--image{
+    animation: appearings 3s ease-in forwards;
+    -webkit-animation: appearings 3s ease-in forwards;
+}
+@keyframes appearings {
+    0%{
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        opacity: 0;
+}
+0%{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform-origin: bottom left;
+}
+100%{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    opacity: 1;
+}
+100%{
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform-origin: bottom left;
+}
+}
+.section-hero--content{
+    animation: appearings_hivansh 6s ease-in forwards;
+    -webkit-animation: appearings_hivansh 6s ease-in forwards;
+}
+@keyframes appearings_hivansh {
+    0%{
+        opacity: 0;
+        transform: scaleZ(-0.5);
+        -webkit-transform: scaleZ(-0.5);
+        -moz-transform: scaleZ(-0.5);
+        -ms-transform: scaleZ(-0.5);
+        -o-transform: scaleZ(-0.5);
+}
+50%{
+    opacity: 0;
+    transform: scaleZ(-0.5);
+    -webkit-transform: scaleZ(-0.5);
+    -moz-transform: scaleZ(-0.5);
+    -ms-transform: scaleZ(-0.5);
+    -o-transform: scaleZ(-0.5);
+}
+100%{
+    opacity: 1;
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+}
+}
 .section-hero--image img{
     width: 100%;
     height: 50%;
@@ -329,10 +396,18 @@ main{
     -webkit-border-radius: 0.5rem;
 }
   
-  .red { background-color: var(--dream-red); }
-  .orange { background-color: var(--dream-orange); }
-  .yellow { background-color: var(--dream-yellow); }
-  .green { background-color: var(--dream-green); }
+  .red {
+     background-color: var(--dream-red); 
+}
+  .orange {
+    background-color: var(--dream-orange); 
+}
+  .yellow {
+     background-color: var(--dream-yellow); 
+}
+  .green {
+     background-color: var(--dream-green); 
+}
 
 
   .beige--button:hover .colorful-button--color.red {
@@ -495,7 +570,7 @@ background-image: linear-gradient(
 .jhansi-container{
     position: relative;
     width: 100%;
-    height: 72rem;
+    height: 72vh;
     background-image: linear-gradient(
     rgba(0,0,0,0.30),
     rgba(0,0,0,0.3)),
@@ -509,25 +584,74 @@ background-image: linear-gradient(
     font-size: 4rem;
 }
 .jhansi-circle{
-    position: absolute;
-      top: 55%;         
-      left: 48%;         
-      transform: translate(-50%, -50%); 
-      width: 102rem;        
-      height: 54rem;      
-      background-color: rgba(8, 8, 8, 0.61); 
+      position: absolute;
+      top: 55%;
+      left: 48%;
+      transform: translate(-50%, -50%);
+      width: 102rem;
+      height: 54rem;
+      background-color: rgba(8, 8, 8, 0.61);
       border-radius: 50%;
-      display: flex;      
-      align-items: center; 
-      justify-content: center; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 19rem;
       box-sizing: border-box;
-      p{
-        /* padding: 2rem; */
+      animation: circle-drop 3s ease-in-out forwards;
+      -webkit-animation: circle-drop 3s ease-in-out forwards;
+}
+@keyframes circle-drop {
+    0%{
+        top: 0%;
+        left: 0%;
+        width: 0;
+        aspect-ratio: 1;
+    }
+    50%{
+        top: 100%;
+        left: 0%;
+        width: 0;
+        aspect-ratio: 1;
+    }
+    100%{
+        top: 55%;
+        left: 48%;
+        width: 102rem;
+        height: 54rem;
+    }
+}
+.jhansi p{
         display: inline-block;
         font-size: 30pxs;
         color: var(--light-cyan);
-      }
+        animation: text-appear 6s ease forwards;
+        -webkit-animation: text-appear 6s ease forwards;
+}
+@keyframes text-appear {
+    0%{
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+   50%{
+    opacity: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+100%{
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
 }
 /***** End jhansi Section *****/
 /***** strength Section *****/ 
