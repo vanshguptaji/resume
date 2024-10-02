@@ -868,7 +868,7 @@ footer *{
         font-size: 1.5rem;
     }
 }
-@media (width <=2005){
+@media (width <=2005px){
     .jhansi h2{
         font-size: 5rem;
     }
@@ -883,6 +883,13 @@ footer *{
     .custom-shape-divider-bottom-1727009381 {
         height: 12rem;
     }
+    .jhansi-circle{
+        width: 70rem;
+        height: 60rem;
+    }
+    /* .jhansi p{
+        font-size: 0.9rem;
+    } */
 }
 @media (width <= 1220px){
     html{
@@ -959,8 +966,8 @@ footer *{
         min-width: 593px;
     }
     .jhansi-circle{
-        width: 32rem;
-        aspect-ratio: 1;
+        width: 36rem;
+        height: auto;
     }
     .jhansi h2{
         font-size: 3rem;
