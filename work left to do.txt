@@ -1,3 +1,2 @@
-1.jhansi waale mein animation daalni
-2.responsive
-3.upload karni hai usko 
+1.responsive
+2.upload karni hai usko 
