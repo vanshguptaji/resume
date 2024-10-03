@@ -977,6 +977,14 @@ footer *{
         font-size: 3rem;
     }
     }
+    @media (width <= 400px){
+        .bars p{
+            font-size: 1.5rem;
+        }
+        .section-contact--homepage {
+            margin-bottom: 3rem;
+        }
+    }
     .section-navbar .container{
         display: flex;
         flex-direction: column;
